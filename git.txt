@@ -1,0 +1,13 @@
+
+
+
+git add .
+git commit -m "commit after flipper variable"
+
+at the end of the day.
+git push
+
+usefule git commands.
+git log
+git status
+git undo
