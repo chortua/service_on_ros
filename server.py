@@ -2,7 +2,7 @@
 
 from __future__ import print_function
 
-from service_node.srv import AddTwoInts.AddTwoIntsResponse
+from service_node.srv import AddTwoInts,AddTwoIntsResponse
 import rospy
 
 def handle_add_two_ints(req):

@@ -4,7 +4,7 @@ from __future__ import print_function
 
 import sys
 import rospy
-from service_mode.srv import *
+from service_node.srv import *
 
 def add_two_ints_client(x, y):
     rospy.wait_for_service('add_two_ints')

@@ -1,0 +1,26 @@
+rosservice: you send information and you get a result.
+
+catkin_create_pkg service_node std_msgs message_generation
+
+
+from __future__ import  #note update oldversion of python to new versions.
+
+
+package.xml #note edit message run time <exec_depend>message_runtime</exec_depend>
+
+Change the access to files.
+chmod +x server.py
+chmod +x client.py
+
+roscore shouldbe running
+
+catkin_make
+
+Ros comman.
+rossrv show service_node/AddTwoInts
+
+run the server file
+
+rosrun service_node server.py
+
+https://www.youtube.com/watch?v=6RrcQFmNO58
