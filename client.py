@@ -1,17 +1,18 @@
 #!/usr/bin/env python
 
-from __future__ import print_function
-
 import sys
 import rospy
-from service_node.srv import *
+from service_node.srv import AddTwoInts
+from service_node.srv import AddTwoIntsRequest
+from service_node.srv import AddTwoIntsResponse
 
 def add_two_ints_client(x, y):
     rospy.wait_for_service('add_two_ints')
     try:
         add_two_ints = rospy.ServiceProxy('add_two_ints', AddTwoInts)
-        resp1 = add_two_ints(x, y)
-        return resp1.sum
+        respl = add_two_ints(x, y)
+        print(x, y)
+        return respl.sum
     except rospy.ServiceException as e:
         print("Service call failed: %s"%e)
 
